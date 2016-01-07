@@ -1,29 +1,38 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|PT+Sans:400,700,400italic,700italic);
+
 @charset "utf-8";
 
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
+$secondary-font:   "Bitter", serif;
+$base-font-size:   1.2rem;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     1rem;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #eee;
+$background-color: #222;
+$brand-color:      #FFB03B;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$sidebar-width:    400px;
+
+$sidebar-palm:     400px;
+$sidebar-laptop:   400px;
+
 // Width of the content area
-$content-width:    800px;
+$content-width:    980px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
