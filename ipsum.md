@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ipsum
+title: Vexacious Goblins
 permalink: /ipsum/
 ---
 ## Sati loquax inprovisoque diversa sanguine

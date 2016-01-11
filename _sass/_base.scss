@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6{
     color: $brand-color;
 }
 
+h1{
+    font-weight: bolder;
+}
+
 
 
 /**
@@ -38,7 +42,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -85,7 +89,7 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
@@ -114,15 +118,25 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+    color: $grey-color-dark;
+    // border-left: 4px solid $grey-color-dark;
+    padding: $spacing-unit / 2 $spacing-unit $spacing-unit / 2 $spacing-unit;
+    font-size: $base-font-size / 1.2;
     font-style: italic;
+    background-color: $brand-color;
 
     > :last-child {
         margin-bottom: 0;
+    }
+
+    > :before {
+        content: "ATTN:";
+        font-family: $secondary-font;
+        display: block;
+        font-weight: bolder;
+        color: white;
+        font-style: normal;
+
     }
 }
 
