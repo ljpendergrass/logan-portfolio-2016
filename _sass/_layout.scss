@@ -118,47 +118,54 @@
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-col {
+    flex-grow: 1;
+    flex-shrink: 1;
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    flex-basis: 35%;
+    min-width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    min-width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    flex-basis: 20%;
+    min-width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    min-width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    flex-basis: 45%;
+    min-width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    min-width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        min-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        min-width:         calc(50% - (#{$spacing-unit} / 2));
     }
 
     .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        min-width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        min-width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
 
 @include media-query($on-palm) {
     .footer-col {
         float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        min-width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        min-width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
 
