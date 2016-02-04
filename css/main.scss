@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
+// GOogle Fonts - Bitter and PT Sans
 @import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|PT+Sans:400,700,400italic,700italic);
 
 @charset "utf-8";
@@ -58,5 +58,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "intro"
 ;
