@@ -1,6 +1,27 @@
 .intro{
 	height: 100vh;
 	width: 100%;
-	padding: 3rem 1rem 3rem 1rem;
+	padding:3*$spacing-unit
+			$spacing-unit
+			3*$spacing-unit
+			$spacing-unit;
 	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+.intro h1{
+	margin: 0;
+	font-size: 2rem;
+	font-family: $secondary-font;
+}
+
+.intro-wrapper{
+	text-align: center;
+	flex: 0 0 100%;
+	padding: 0
+			0
+			.5*$spacing-unit
+			0;
+	background-color: rgba(255,176,59,.4)
 }
